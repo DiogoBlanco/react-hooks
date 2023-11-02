@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from 'react';
 
-export default function App() {
+const App = () => {
   const [counter, setCounter] = useState(0);
 
   const eventFn = () => {
@@ -34,4 +34,5 @@ export default function App() {
       <button onClick={() => setCounter(counter + 1)}>+</button>
     </div>
   );
-}
+};
+export default App;
